@@ -99,6 +99,6 @@ def delete_picture(id):
     for picture in data:
         if picture["id"] == int(id):
             data.remove(picture)
-            return picture, 204
+            return "", 204
 
     return {"message": "picture not found"}, 404
